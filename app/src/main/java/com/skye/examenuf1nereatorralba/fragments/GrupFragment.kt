@@ -18,7 +18,7 @@ import com.skye.examenuf1nereatorralba.viewmodel.SharedViewModel
 import androidx.lifecycle.Observer
 
 class GrupFragment : Fragment() {
-
+//comit prue
     private lateinit var binding: FragmentGrupBinding
     private lateinit var alumnesViewModel: AlumnesViewModel
     private lateinit var sharedViewModel: SharedViewModel
