@@ -26,7 +26,7 @@ class AlumnesFragment : Fragment() {
             inflater,
             R.layout.fragment_alumnes, container, false
         )
-        insertAlumneViewModel = ViewModelProvider(this).get(insertAlumneViewModel::class.java)
+        insertAlumneViewModel = ViewModelProvider(this).get(InsertAlumneViewModel::class.java)
 
         binding.buttonAfegir.setOnClickListener {
 

@@ -10,4 +10,7 @@
     <string name="grup">grup</string>
     <string name="nom_del_alumne">Nom del alumne</string>
     <string name="afegir">Afegir</string>
+    <string name="nomAlumne">nom</string>
+    <string name="alumnes">Alumnes</string>
+    <string name="Grup">Grup</string>
 </resources>

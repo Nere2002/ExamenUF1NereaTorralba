@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".fragments.AlumnesFragment">
@@ -12,14 +12,13 @@
             android:id="@+id/nom"
             android:layout_width="380dp"
             android:layout_height="59dp"
-            android:layout_marginTop="148dp"
+            android:layout_marginTop="60dp"
             android:autofillHints=""
             android:ems="10"
-            android:hint="@string/nom_del_alumne"
             android:inputType="text"
-            android:text="@string/nom_del_alumne"
+            android:text="@string/nomAlumne"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.437"
+            app:layout_constraintHorizontal_bias="0.354"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,9 +29,9 @@
             android:layout_marginTop="40dp"
             android:autofillHints=""
             android:ems="10"
-            android:hint="@string/nota_10"
+            android:hint="@string/nota"
             android:inputType="text"
-            android:text="@string/nota_10"
+            android:text="@string/nota"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.457"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,13 +41,13 @@
             android:id="@+id/grup"
             android:layout_width="379dp"
             android:layout_height="64dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="48dp"
             android:autofillHints=""
             android:ems="10"
-            android:hint="@string/grup_smx"
+            android:hint="@string/grup"
             android:inputType="text"
-            android:text="@string/grup_smx"
+            android:text="@string/grup"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nom"
             tools:ignore="DuplicateSpeakableTextCheck,VisualLintBounds" />
@@ -58,8 +57,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/afegir"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="205dp"
-            tools:layout_editor_absoluteY="523dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nota"
+            app:layout_constraintVertical_bias="0.282"
+            tools:ignore="MissingConstraints" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
