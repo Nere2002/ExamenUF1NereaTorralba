@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/alumnesFragment">
+
+    <fragment
+        android:id="@+id/alumnesFragment"
+        android:name="com.skye.examenuf1nereatorralba.fragments.AlumnesFragment"
+        android:label="fragment_alumnes"
+        tools:layout="@layout/fragment_alumnes" >
+        <action
+            android:id="@+id/action_alumnesFragment_to_grupFragment"
+            app:destination="@id/grupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/grupFragment"
+        android:name="com.skye.examenuf1nereatorralba.fragments.GrupFragment"
+        android:label="fragment_grup"
+        tools:layout="@layout/fragment_grup" />
+</navigation>

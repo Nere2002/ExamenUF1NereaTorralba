@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ExamenUF1NereaTorralba</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nom">nom</string>
+    <string name="ins">Ins</string>
+    <string name="nota_10">Precio: $10</string>
+    <string name="grup_smx">Precio: $10</string>
+    <string name="nota">nota</string>
+    <string name="grup">grup</string>
+    <string name="nom_del_alumne">Nom del alumne</string>
+    <string name="afegir">Afegir</string>
+</resources>
