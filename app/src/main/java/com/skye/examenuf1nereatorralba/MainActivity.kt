@@ -10,10 +10,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        //Log.d("MainActivity", "onCreate")
 
         binding = ActivityMainBinding.inflate(layoutInflater)
+        //Log.d("MainActivity", "onCreate")
+
         val view = binding.root
         setContentView(view)
 
@@ -23,12 +23,12 @@ class MainActivity : AppCompatActivity() {
                 supportFragmentManager.findFragmentById(R.id.navHostFragment)?.findNavController()
 
             when (item.itemId) {
-                R.id.action_alumnesFragment -> {
+                R.id.alumnesFragment -> {
                     navController?.navigate(R.id.alumnesFragment)
                     return@setOnNavigationItemSelectedListener true
                 }
 
-                R.id.action_grupFragment -> {
+                R.id.grupFragment -> {
                     navController?.navigate(R.id.grupFragment)
                     return@setOnNavigationItemSelectedListener true
                 }

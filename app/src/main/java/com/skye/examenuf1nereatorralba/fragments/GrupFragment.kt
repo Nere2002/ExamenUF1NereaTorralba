@@ -32,9 +32,9 @@ class GrupFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Infla y vincula el diseño de FragmentCatalegBinding a la variable 'binding'.
-        binding = DataBindingUtil.inflate(
-            inflater,
-            R.layout.fragment_grup , container, false
+        binding = FragmentGrupBinding.inflate(
+            inflater
+
         )
         // Inicializa los ViewModels para este fragmento utilizando ViewModelProvider.
         alumnesViewModel = ViewModelProvider(this).get(AlumnesViewModel::class.java)

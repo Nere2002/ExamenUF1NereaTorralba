@@ -10,9 +10,9 @@
         android:name="com.skye.examenuf1nereatorralba.fragments.AlumnesFragment"
         android:label="fragment_alumnes"
         tools:layout="@layout/fragment_alumnes" >
-        <action
-            android:id="@+id/action_alumnesFragment_to_grupFragment"
-            app:destination="@id/grupFragment" />
+<!--        <action-->
+<!--            android:id="@+id/action_alumnesFragment_to_grupFragment"-->
+<!--            app:destination="@id/grupFragment" />-->
     </fragment>
     <fragment
         android:id="@+id/grupFragment"

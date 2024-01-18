@@ -22,9 +22,8 @@ class AlumnesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(
-            inflater,
-            R.layout.fragment_alumnes, container, false
+        binding = FragmentAlumnesBinding.inflate(
+            inflater
         )
         insertAlumneViewModel = ViewModelProvider(this).get(InsertAlumneViewModel::class.java)
 
@@ -38,7 +37,7 @@ class AlumnesFragment : Fragment() {
             // Llama al método newMoble del ViewModel para insertar un nuevo elemento en el catálogo.
             insertAlumneViewModel.newAlumne(requireContext(), nom, nota, grup)
             // Navega al Fragmento de Catálogo después de la inserción exitosa.
-            Navigation.findNavController(it).navigate(R.id.action_alumnesFragment_to_grupFragment)
+           // Navigation.findNavController(it).navigate(R.id.action_alumnesFragment_to_grupFragment)
         }
 
 
